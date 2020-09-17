@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
+import Router from './routes';
+import GlobalStyles from './styles/GlobalStyles';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>GitHub</h1>
-    </div>
+    <>
+      <GlobalStyles />
+      <Router />
+    </>
   );
 };
 
