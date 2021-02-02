@@ -1,15 +1,16 @@
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Header from './components/Header';
-import Main from './pages/Main';
+import Profile from './pages/Profile';
+import Repo from './pages/Repo';
 
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Route exact path="/" component={Main} />
-      <Route exact path="/:username" component={Main} />
-      <Route exact path="/:username/:repo" component={Main} />
+      <Route exact path="/" component={Profile} />
+      <Route exact path="/:username" component={Profile} />
+      <Route exact path="/:username/:repo" component={Repo} />
     </BrowserRouter>
   );
 };
