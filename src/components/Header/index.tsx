@@ -1,11 +1,11 @@
 import React from 'react';
-import {Container} from './styles';
+import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
   return (
-    <Container>
+    <div className={styles.container}>
       <h1>Header</h1>
-    </Container>
+    </div>
   );
 };
 

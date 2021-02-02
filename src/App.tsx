@@ -1,11 +1,10 @@
 import React from 'react';
 import Router from './routes';
-import GlobalStyles from './styles/GlobalStyles';
+import './styles/globalStyles.module.scss';
 
 const App: React.FC = () => {
   return (
     <>
-      <GlobalStyles />
       <Router />
     </>
   );
