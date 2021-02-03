@@ -1,11 +1,16 @@
 import React from 'react';
 import styles from './Header.module.scss';
+import {FaGithub} from 'react-icons/fa';
 
 const Header: React.FC = () => {
   return (
-    <div className={styles.container}>
-      <h1>Header</h1>
-    </div>
+    <header className={styles.container}>
+      <FaGithub size={32} color="#fff" />
+
+      <form onSubmit={() => {}}>
+        <input type="text" placeholder="Enter a username or repo..." />
+      </form>
+    </header>
   );
 };
 
